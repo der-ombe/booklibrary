@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+BookLibrary
+{% endblock %}
+
+{% block body %}
+
+<nav>
+    <ul>
+        <li><a href="{{ path('book_index') }}">Books</a></li>
+        <li><a href="{{ path('author_index') }}">Authors</a></li>
+        <li><a href="{{ path('category_index') }}">Category</a></li>
+    </ul>
+</nav>
+
+{% endblock %}
